@@ -1,0 +1,1 @@
+cmd_/home/yashas/C_DS_OS_Cpp/LDD/sample_driver/sample_driver.mod := printf '%s\n'   sample_driver.o | awk '!x[$$0]++ { print("/home/yashas/C_DS_OS_Cpp/LDD/sample_driver/"$$0) }' > /home/yashas/C_DS_OS_Cpp/LDD/sample_driver/sample_driver.mod
