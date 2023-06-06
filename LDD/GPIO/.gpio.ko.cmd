@@ -1,0 +1,1 @@
+cmd_/home/yashas/C_DS_OS_Cpp/LDD/GPIO/gpio.ko := ld -r -EL -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/yashas/C_DS_OS_Cpp/LDD/GPIO/gpio.ko /home/yashas/C_DS_OS_Cpp/LDD/GPIO/gpio.o /home/yashas/C_DS_OS_Cpp/LDD/GPIO/gpio.mod.o;  true
