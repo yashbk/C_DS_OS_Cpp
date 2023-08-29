@@ -1,0 +1,1 @@
+cmd_/home/yashas/C_DS_OS_Cpp/DISPLAY/driver/Module.symvers :=  sed 's/ko$$/o/'  /home/yashas/C_DS_OS_Cpp/DISPLAY/driver/modules.order | scripts/mod/modpost -m -a    -o /home/yashas/C_DS_OS_Cpp/DISPLAY/driver/Module.symvers -e -i Module.symvers -T - 

@@ -1,0 +1,1 @@
+cmd_/home/yashas/C_DS_OS_Cpp/DISPLAY/driver/driver_bus.ko := ld -r -EL -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/yashas/C_DS_OS_Cpp/DISPLAY/driver/driver_bus.ko /home/yashas/C_DS_OS_Cpp/DISPLAY/driver/driver_bus.o /home/yashas/C_DS_OS_Cpp/DISPLAY/driver/driver_bus.mod.o;  true
