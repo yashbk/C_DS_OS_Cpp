@@ -561,7 +561,7 @@ static int etx_oled_probe(struct i2c_client *client,
   SSD1306_StartScrollHorizontal( true, 0, 2);
 
   //Write String to OLED
-  SSD1306_String("Welcome\nTo\nEmbeTronicX\n\n");
+  SSD1306_String("Good\nmorning\nBoi\n\n");
   
   pr_info("OLED Probed!!!\n");
   
@@ -577,7 +577,7 @@ static void etx_oled_remove(struct i2c_client *client)
   //Set cursor
   //SSD1306_SetCursor(2,0);  
   //Write String to OLED
-  SSD1306_String("ThanK YoU!!!");
+  SSD1306_String("Akash jatre");
   
   msleep(1000);
   
