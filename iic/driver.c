@@ -193,13 +193,13 @@ static int etx_oled_probe(struct i2c_client *client,
 ** This function getting called when the slave has been removed
 ** Note : This will be called only once when we unload the driver.
 */
-static void etx_oled_remove(struct i2c_client *client)
+static int etx_oled_remove(struct i2c_client *client)
 {   
     //fill the OLED with this data
     SSD1306_Fill(0x00);
     
     pr_info("OLED Removed!!!\n");
-   // return 0;
+    return 0;
 }
 
 /*

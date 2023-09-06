@@ -1,0 +1,1 @@
+cmd_/home/thundersoft/C_DS_OS_Cpp/DISPLAY/ssd1306_4b/driver.ko := ld -r  -EL  --build-id=sha1  -T scripts/module.lds -o /home/thundersoft/C_DS_OS_Cpp/DISPLAY/ssd1306_4b/driver.ko /home/thundersoft/C_DS_OS_Cpp/DISPLAY/ssd1306_4b/driver.o /home/thundersoft/C_DS_OS_Cpp/DISPLAY/ssd1306_4b/driver.mod.o;  true
