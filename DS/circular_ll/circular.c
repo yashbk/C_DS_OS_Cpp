@@ -11,6 +11,8 @@ void insert_at_last(ll **tail,int data);
 void display(ll **tail);
 void create_loop(ll **tail,int pos);
 int ll_len(ll **tail);
+void detect_loop(ll **tail,int remove_loop);
+
 
 int main()
 {
@@ -20,7 +22,9 @@ int main()
 	insert_at_last(&tail,9);
 	insert_at_last(&tail,27);
 	create_loop(&tail,2);
+	detect_loop(&tail,1);
 	display(&tail);
+
 
 }
 
@@ -76,11 +80,10 @@ int ll_len(ll **tail)
 {
 	ll *temp = *tail;
 	int len = 0;
-	while(temp)
-	{
+	do{
 		temp = temp->next;
 		len++;
-	}
+	}while(temp != *tail);
 	return len;
 }
 
@@ -94,11 +97,42 @@ void create_loop(ll **tail,int pos)
 	{
 		if(i == pos)
 		{
-			temp = temp->next;
+			(*tail)->next = temp;
+			*tail = head; 
+			return;
 		}
 		i++;
-		(*tail)->next = temp;
-		*tail = head; 
+		temp = temp->next;
+	}
+	printf("Loop created\n******************************\n\n\n");
+}
+
+void detect_loop(ll **tail,int remove_loop)
+{
+	ll *fast_ptr = *tail;
+	ll *slow_ptr = *tail;
+
+	do
+	{
+		fast_ptr = fast_ptr->next->next;
+		slow_ptr = slow_ptr->next;
+	}while(fast_ptr != slow_ptr);
+
+	ll *temp = *tail;
+	ll *prev = NULL;
+
+	while(temp != slow_ptr)
+	{
+		temp = temp->next;
+		prev = slow_ptr;
+		slow_ptr = slow_ptr->next;
+	}
+	printf("Loop started at node with data :%d\n",temp->data);
+
+	if(remove_loop == 1)
+	{
+		prev->next = *tail;
+		*tail = prev;
 	}
 }
 
