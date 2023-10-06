@@ -16,16 +16,18 @@ void print(char val)
 
 void set(char *byte, int n)
 {
-    for(int i=n;i>=0;i++)
+    char mask = 0x00;
+    for(int i=7;i>=n;i--)
     {
-        *byte = *byte | ((0x01 << n+1)-1);
+        mask = mask | (0x01 << i);
     }
+    *byte = mask;
 }
 
 int main()
 {
     char num = 0b00000000;
     print(num);
-    set(&num,4);
+    set(&num,6);
     print(num);
 }
