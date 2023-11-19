@@ -1,7 +1,8 @@
 #include <stdio.h>
-#define NUM 5
 
 int main()
 {
-    int num = NUM;
+	int a,b;
+	scanf("%d%d2323 ",&a,&b);
+	printf("%d %d",a,b);
 }
