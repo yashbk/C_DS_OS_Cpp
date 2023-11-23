@@ -1,6 +1,6 @@
 /*
 Problem statement.
-You are given a string str consisting of lower case English alphabets only and an integer K. You have to arrange the k alphabets in ascending order and next k alphabets in descending order as per the following pattern. 
+You are given a string str consisting of lower case English alphabets only and an integer K. You have to arrange the k alphabets in ascending order and next k alphabets in descending order and so on as per the following pattern. 
 “abcdefghstuvwxyzijklmnopqr”
 Note:
 The pattern that needs to be followed to arrange the elements in ascending and descending order as “abcdefghstuvwxyzijklmnopqr”
@@ -57,32 +57,39 @@ int len(char *ptr)
 
 int main()
 {
-    int k=3;
-    char str[200] = "aiu";
+    int k;
+    char str[200];
+    printf("Enter the k value and a string\n");
+    scanf("%d %s",&k,str);
     int l = len(str);
     printf("%d\n",l);
     printf("%s\n",str);
-    
-    for(int i=0;i<k-1 ;i++)
-    {
-        if(get_val(str[i]) > get_val(str[i+1]))
-        {
-            str[i] = str[i] ^ str[i+1];
-            str[i+1] = str[i] ^ str[i+1];
-            str[i] = str[i] ^ str[i+1];
-        }
-    }
-    
-    for(int i=k;i<k+k-1 && k*2 <= l;i++)
-    {
-        if(get_val(str[i]) < get_val(str[i+1]))
-        {
-            str[i] = str[i] ^ str[i+1];
-            str[i+1] = str[i] ^ str[i+1];
-            str[i] = str[i] ^ str[i+1];
-        }
-    }
-    printf("%s",str);
+    int limit = k;
 
+    for(int i=0;i<l;)
+    {
+        for(;i<limit-1;i++)
+        {
+            if(get_val(str[i]) > get_val(str[i+1]))
+            {
+                str[i] = str[i] ^ str[i+1];
+                str[i+1] = str[i] ^ str[i+1];
+                str[i] = str[i] ^ str[i+1];
+            }
+        }
+    
+        for(i=limit;i<limit+k-1;i++)
+        {
+            if(get_val(str[i]) < get_val(str[i+1]))
+            {
+                str[i] = str[i] ^ str[i+1];
+                str[i+1] = str[i] ^ str[i+1];
+                str[i] = str[i] ^ str[i+1];
+            }
+        }
+        i = limit+ k;
+        limit +=k*2;
+    }
+    printf("%s\n",str);
     return 0;
 }
