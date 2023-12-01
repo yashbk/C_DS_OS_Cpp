@@ -17,6 +17,7 @@ int main()
 		printf("Failed to open device\n");
 	else
 	{
+		printf("The file descriptor is %d\n",fd);
 		//system call for writing 
 		if(write(fd,write_data,strlen(write_data)) == -1)
 		{
@@ -38,6 +39,19 @@ int main()
 	}
 
 	close(fd);
+
+	printf("Opening multiple times\n");
+	int fds[5];
+	for(int i=0;i<5;i++)
+	{
+		fds[i] = open("/dev/bk_device",O_RDWR);
+		printf("fds[%d] = %d\n",i,fds[i]);
+	}
+
+	for(int i=0;i<5;i++)
+	{
+		close(fds[i]);
+	}
 	return 0;
 }
 

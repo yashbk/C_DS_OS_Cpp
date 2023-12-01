@@ -78,7 +78,13 @@ static int __init driver_init_func(void)
         pr_info("Major = %d Minor = %d \n",MAJOR(dev), MINOR(dev));
 
         /*Creating cdev structure and linking fops with cdev structure*/
+	
         cdev_init(&dev_cdev,&fops);
+	/*
+	 * The below method is not preferred as open function may fail due to some uninitialized values
+	dev_cdev.ops = &fops;
+	dev_cdev.owner = THIS_MODULE;
+	*/
 
         /*Adding character device to the system*/
         if((cdev_add(&dev_cdev,dev,1)) < 0){
@@ -100,6 +106,7 @@ static int __init driver_init_func(void)
         }
         pr_info("Device Driver Inserted...Done!!!\n");
 	
+	/* Creating buffer memory*/
 
 	buffer = kmalloc(400,GFP_KERNEL);
 	if(!buffer)

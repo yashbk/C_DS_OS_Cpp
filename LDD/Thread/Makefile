@@ -1,4 +1,4 @@
-obj-m=bk_dev.o
+obj-m=thread.o
 
 KDIR= /lib/modules/$(shell uname -r)/build
 

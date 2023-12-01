@@ -1,0 +1,1 @@
+cmd_/home/yashas/C_DS_OS_Cpp/LDD/c_dev/Module.symvers :=  scripts/mod/modpost -m -a     -o /home/yashas/C_DS_OS_Cpp/LDD/c_dev/Module.symvers -T /home/yashas/C_DS_OS_Cpp/LDD/c_dev/modules.order -i Module.symvers -e 

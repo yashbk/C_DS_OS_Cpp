@@ -1,0 +1,1 @@
+cmd_/home/yashas/C_DS_OS_Cpp/LDD/c_dev/bk_dev.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/yashas/C_DS_OS_Cpp/LDD/c_dev/bk_dev.ko /home/yashas/C_DS_OS_Cpp/LDD/c_dev/bk_dev.o /home/yashas/C_DS_OS_Cpp/LDD/c_dev/bk_dev.mod.o;  true
