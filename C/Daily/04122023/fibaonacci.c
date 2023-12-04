@@ -2,7 +2,7 @@
 
 void fibonacci(int num,int a,int b, int c)
 {
-    if(c >= num)
+    if(a >= num+1)
     {
         printf("This is entered\n");
         return;
