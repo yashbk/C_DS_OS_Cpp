@@ -52,10 +52,9 @@ int main()
 {
 	int k;
 	char str[200];
-	printf("Enter a limit and string\n");
-	scanf("%d",&k);
+	printf("Enter a string and k\n");
 	scanf("%s",str);
-
+	scanf("%d",&k);
 	int i=0,limit = k;
 	for(;i<strlen(str);)
 	{
