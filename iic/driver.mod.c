@@ -1,10 +1,13 @@
 #include <linux/module.h>
 #define INCLUDE_VERMAGIC
 #include <linux/build-salt.h>
+#include <linux/elfnote-lto.h>
+#include <linux/export-internal.h>
 #include <linux/vermagic.h>
 #include <linux/compiler.h>
 
 BUILD_SALT;
+BUILD_LTO_INFO;
 
 MODULE_INFO(vermagic, VERMAGIC_STRING);
 MODULE_INFO(name, KBUILD_MODNAME);
@@ -23,25 +26,24 @@ __section(".gnu.linkonce.this_module") = {
 MODULE_INFO(retpoline, "Y");
 #endif
 
+
 static const struct modversion_info ____versions[]
 __used __section("__versions") = {
-	{ 0xcaec5711, "module_layout" },
-	{ 0xe2888949, "i2c_del_driver" },
-	{ 0xc79c1a0, "i2c_unregister_device" },
-	{ 0x9a8cadf7, "i2c_put_adapter" },
-	{ 0xcc19602c, "i2c_register_driver" },
-	{ 0xd7d702ae, "i2c_new_client_device" },
-	{ 0x691989b9, "i2c_get_adapter" },
+	{ 0x226383ed, "i2c_get_adapter" },
+	{ 0x3e7874ab, "i2c_new_client_device" },
+	{ 0x440cbd26, "i2c_register_driver" },
+	{ 0xbf4bb060, "i2c_put_adapter" },
+	{ 0x92997ed8, "_printk" },
+	{ 0x1d31a384, "i2c_unregister_device" },
+	{ 0x424d82fe, "i2c_del_driver" },
+	{ 0xbec3491, "i2c_transfer_buffer_flags" },
+	{ 0x8da6585d, "__stack_chk_fail" },
 	{ 0xf9a482f9, "msleep" },
-	{ 0xc5850110, "printk" },
-	{ 0x86332725, "__stack_chk_fail" },
-	{ 0x600d7b27, "i2c_transfer_buffer_flags" },
-	{ 0x8f678b07, "__stack_chk_guard" },
-	{ 0xb1ad28e0, "__gnu_mcount_nc" },
+	{ 0x8f80e6e5, "module_layout" },
 };
 
 MODULE_INFO(depends, "");
 
 MODULE_ALIAS("i2c:ETX_OLED");
 
-MODULE_INFO(srcversion, "668DA0F28DAF5550773413A");
+MODULE_INFO(srcversion, "75165F105598753E6E9AD19");

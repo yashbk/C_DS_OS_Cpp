@@ -1,2 +1,1 @@
-/home/thundersoft/C_DS_OS_Cpp/iic/driver.o
-
+/home/raspi/C_DS_OS_Cpp/iic/driver.o

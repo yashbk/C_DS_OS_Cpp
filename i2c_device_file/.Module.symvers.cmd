@@ -1,0 +1,1 @@
+cmd_/home/raspi/C_DS_OS_Cpp/i2c_device_file/Module.symvers :=  sed 's/ko$$/o/'  /home/raspi/C_DS_OS_Cpp/i2c_device_file/modules.order | scripts/mod/modpost -m -a    -o /home/raspi/C_DS_OS_Cpp/i2c_device_file/Module.symvers -e -i Module.symvers -T - 
