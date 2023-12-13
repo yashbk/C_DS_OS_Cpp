@@ -1,0 +1,1 @@
+cmd_/home/bk/C_DS_OS_Cpp/i2c_dynamic/dynamic.ko := ld -r -EL  -maarch64elf -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/bk/C_DS_OS_Cpp/i2c_dynamic/dynamic.ko /home/bk/C_DS_OS_Cpp/i2c_dynamic/dynamic.o /home/bk/C_DS_OS_Cpp/i2c_dynamic/dynamic.mod.o;  true

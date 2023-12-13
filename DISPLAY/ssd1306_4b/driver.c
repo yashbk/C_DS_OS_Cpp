@@ -561,7 +561,7 @@ static int etx_oled_probe(struct i2c_client *client,
   SSD1306_StartScrollHorizontal( true, 0, 2);
 
   //Write String to OLED
-  SSD1306_String("Just printing:\nTHUNDERSOFT INDIA\n\nSSD1306 driver\n ALL IS WELL\n");
+  SSD1306_String("Good\nmorning\nBoi\n\n");
   
   pr_info("OLED Probed!!!\n");
   
@@ -572,12 +572,12 @@ static int etx_oled_probe(struct i2c_client *client,
 ** This function getting called when the slave has been removed
 ** Note : This will be called only once when we unload the driver.
 */
-static void  etx_oled_remove(struct i2c_client *client)
+static void etx_oled_remove(struct i2c_client *client)
 {
   //Set cursor
   //SSD1306_SetCursor(2,0);  
   //Write String to OLED
-  SSD1306_String("Exiting");
+  SSD1306_String("Akash jatre");
   
   msleep(1000);
   
@@ -589,6 +589,7 @@ static void  etx_oled_remove(struct i2c_client *client)
   SSD1306_Write(true, 0xAE); // Entire Display OFF
   
   pr_info("OLED Removed!!!\n");
+ // return 0;
 }
  
 /*

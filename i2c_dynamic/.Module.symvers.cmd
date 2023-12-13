@@ -1,0 +1,1 @@
+cmd_/home/bk/C_DS_OS_Cpp/i2c_dynamic/Module.symvers :=  sed 's/ko$$/o/'  /home/bk/C_DS_OS_Cpp/i2c_dynamic/modules.order | scripts/mod/modpost -m -a    -o /home/bk/C_DS_OS_Cpp/i2c_dynamic/Module.symvers -e -i Module.symvers -T - 

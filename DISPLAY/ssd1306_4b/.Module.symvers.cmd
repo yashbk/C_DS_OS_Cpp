@@ -1,1 +1,0 @@
-cmd_/home/raspi/C_DS_OS_Cpp/DISPLAY/ssd1306_4b/Module.symvers :=  sed 's/ko$$/o/'  /home/raspi/C_DS_OS_Cpp/DISPLAY/ssd1306_4b/modules.order | scripts/mod/modpost -m -a    -o /home/raspi/C_DS_OS_Cpp/DISPLAY/ssd1306_4b/Module.symvers -e -i Module.symvers -T - 

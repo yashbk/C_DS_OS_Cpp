@@ -29,21 +29,18 @@ MODULE_INFO(retpoline, "Y");
 
 static const struct modversion_info ____versions[]
 __used __section("__versions") = {
+	{ 0x92997ed8, "_printk" },
 	{ 0x226383ed, "i2c_get_adapter" },
+	{ 0x5792f848, "strlcpy" },
 	{ 0x3e7874ab, "i2c_new_client_device" },
 	{ 0x440cbd26, "i2c_register_driver" },
-	{ 0xbf4bb060, "i2c_put_adapter" },
-	{ 0x92997ed8, "_printk" },
-	{ 0x1d31a384, "i2c_unregister_device" },
-	{ 0x424d82fe, "i2c_del_driver" },
-	{ 0xbec3491, "i2c_transfer_buffer_flags" },
 	{ 0x8da6585d, "__stack_chk_fail" },
-	{ 0xf9a482f9, "msleep" },
+	{ 0x424d82fe, "i2c_del_driver" },
 	{ 0x8f80e6e5, "module_layout" },
 };
 
 MODULE_INFO(depends, "");
 
-MODULE_ALIAS("i2c:ETX_OLED");
+MODULE_ALIAS("i2c:ssd1306");
 
-MODULE_INFO(srcversion, "3ED4090AFA285C224923BD4");
+MODULE_INFO(srcversion, "CF1E289C8079E2CBCCC9820");

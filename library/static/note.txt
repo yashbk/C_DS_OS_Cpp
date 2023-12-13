@@ -1,0 +1,19 @@
+Let's say you have three function in a static library one(), two() , three()
+
+but in the main file you are calling just one()
+
+Then when you create an executable only one() function definition from the library is added into executable.
+If you call  one(), two() and three() then alll of them will be a part of executable.
+
+How to create a library:
+
+ create objects
+ gcc -c *.c
+
+
+ create library
+ ar rcs mylib.a *.o
+
+
+Usage
+gcc main.c mylib.a
