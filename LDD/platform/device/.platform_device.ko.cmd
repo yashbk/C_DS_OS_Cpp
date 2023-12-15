@@ -1,0 +1,1 @@
+cmd_/home/raspi/C_DS_OS_Cpp/LDD/platform/device/platform_device.ko := ld -r -EL  -maarch64elf -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/raspi/C_DS_OS_Cpp/LDD/platform/device/platform_device.ko /home/raspi/C_DS_OS_Cpp/LDD/platform/device/platform_device.o /home/raspi/C_DS_OS_Cpp/LDD/platform/device/platform_device.mod.o;  true

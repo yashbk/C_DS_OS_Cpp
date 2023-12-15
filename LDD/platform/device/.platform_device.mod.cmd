@@ -1,0 +1,1 @@
+cmd_/home/raspi/C_DS_OS_Cpp/LDD/platform/device/platform_device.mod := printf '%s\n'   platform_device.o | awk '!x[$$0]++ { print("/home/raspi/C_DS_OS_Cpp/LDD/platform/device/"$$0) }' > /home/raspi/C_DS_OS_Cpp/LDD/platform/device/platform_device.mod
