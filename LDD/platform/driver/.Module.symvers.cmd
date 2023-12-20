@@ -1,1 +1,0 @@
-cmd_/home/raspi/C_DS_OS_Cpp/LDD/platform/driver/Module.symvers :=  sed 's/ko$$/o/'  /home/raspi/C_DS_OS_Cpp/LDD/platform/driver/modules.order | scripts/mod/modpost -m -a    -o /home/raspi/C_DS_OS_Cpp/LDD/platform/driver/Module.symvers -e -i Module.symvers -T - 

@@ -1,1 +1,0 @@
-cmd_/home/raspi/C_DS_OS_Cpp/LDD/platform/driver/platform_driver.mod := printf '%s\n'   platform_driver.o | awk '!x[$$0]++ { print("/home/raspi/C_DS_OS_Cpp/LDD/platform/driver/"$$0) }' > /home/raspi/C_DS_OS_Cpp/LDD/platform/driver/platform_driver.mod

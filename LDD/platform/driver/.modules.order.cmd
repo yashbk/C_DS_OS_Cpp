@@ -1,1 +1,0 @@
-cmd_/home/raspi/C_DS_OS_Cpp/LDD/platform/driver/modules.order := {   echo /home/raspi/C_DS_OS_Cpp/LDD/platform/driver/platform_driver.ko; :; } > /home/raspi/C_DS_OS_Cpp/LDD/platform/driver/modules.order

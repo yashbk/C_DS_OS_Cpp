@@ -1,1 +1,0 @@
-cmd_/home/raspi/C_DS_OS_Cpp/LDD/platform/driver/platform_driver.ko := ld -r -EL  -maarch64elf -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/raspi/C_DS_OS_Cpp/LDD/platform/driver/platform_driver.ko /home/raspi/C_DS_OS_Cpp/LDD/platform/driver/platform_driver.o /home/raspi/C_DS_OS_Cpp/LDD/platform/driver/platform_driver.mod.o;  true

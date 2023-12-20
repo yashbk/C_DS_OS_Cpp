@@ -1,1 +1,0 @@
-cmd_/home/raspi/C_DS_OS_Cpp/LDD/platform/device/modules.order := {   echo /home/raspi/C_DS_OS_Cpp/LDD/platform/device/platform_device.ko; :; } > /home/raspi/C_DS_OS_Cpp/LDD/platform/device/modules.order
