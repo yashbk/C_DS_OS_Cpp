@@ -1,0 +1,1 @@
+cmd_/home/yashas/C_DS_OS_Cpp/LDD/Interrupt/raspi_tasklet/tasklet.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/yashas/C_DS_OS_Cpp/LDD/Interrupt/raspi_tasklet/tasklet.ko /home/yashas/C_DS_OS_Cpp/LDD/Interrupt/raspi_tasklet/tasklet.o /home/yashas/C_DS_OS_Cpp/LDD/Interrupt/raspi_tasklet/tasklet.mod.o;  true

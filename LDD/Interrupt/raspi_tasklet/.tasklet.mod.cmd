@@ -1,0 +1,1 @@
+cmd_/home/yashas/C_DS_OS_Cpp/LDD/Interrupt/raspi_tasklet/tasklet.mod := printf '%s\n'   tasklet.o | awk '!x[$$0]++ { print("/home/yashas/C_DS_OS_Cpp/LDD/Interrupt/raspi_tasklet/"$$0) }' > /home/yashas/C_DS_OS_Cpp/LDD/Interrupt/raspi_tasklet/tasklet.mod

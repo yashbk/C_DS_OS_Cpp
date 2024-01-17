@@ -1,0 +1,1 @@
+cmd_/home/yashas/C_DS_OS_Cpp/LDD/Interrupt/raspi_tasklet/Module.symvers :=  scripts/mod/modpost -m -a     -o /home/yashas/C_DS_OS_Cpp/LDD/Interrupt/raspi_tasklet/Module.symvers -T /home/yashas/C_DS_OS_Cpp/LDD/Interrupt/raspi_tasklet/modules.order -i Module.symvers -e 
