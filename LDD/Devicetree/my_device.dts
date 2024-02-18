@@ -1,0 +1,14 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "my,sensor";
+    model = "My Temperature Sensor";
+
+    sensor@0 {
+        compatible = "my,temperature-sensor";
+        reg = <0>;
+        temperature = <25>; // Initial temperature value
+    };
+};
+
